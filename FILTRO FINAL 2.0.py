@@ -36,17 +36,17 @@ start_time = time.time()
 # We set up the graphs parameters and configuration
 fig, (ax1, ax2, ax3) = plt.subplots(3, 1, sharex=True)
 
-line_angleXacc, = ax1.plot([], [], label="X angle with acceleration")
-line_angleXgyro, = ax1.plot([], [], label="X angle with gyroscope")
-line_Angle_X, = ax1.plot([], [], label="X angle with complementary filter",linestyle="--", linewidth=2.5, color="red")
+line_angleXacc, = ax1.plot([], [], label="Pitch angle with acceleration")
+line_angleXgyro, = ax1.plot([], [], label="Pitch angle with gyroscope")
+line_Angle_X, = ax1.plot([], [], label="Pitch angle with complementary filter",linestyle="--", linewidth=2.5, color="red")
 
-line_angleYacc, = ax2.plot([], [], label="Y angle with acceleration")
-line_angleYgyro, = ax2.plot([], [], label="Y angle with gyroscope")
-line_Angle_Y, = ax2.plot([], [], label="Y angle with complementary filter", linestyle="--", linewidth=2.5, color="red") 
+line_angleYacc, = ax2.plot([], [], label="Roll angle with acceleration")
+line_angleYgyro, = ax2.plot([], [], label="Roll angle with gyroscope")
+line_Angle_Y, = ax2.plot([], [], label="Roll angle with complementary filter", linestyle="--", linewidth=2.5, color="red") 
 
-line_angleZacc, = ax3.plot([], [], label="Z angle with acceleration")
-line_angleZgyro, = ax3.plot([], [], label="Z angle with gyroscope")
-line_Angle_Z, = ax3.plot([], [], label="Z angle with complementary filter", linestyle="--", linewidth=2.5, color="red")
+line_angleZacc, = ax3.plot([], [], label="Yaw angle with acceleration")
+line_angleZgyro, = ax3.plot([], [], label="Yaw angle with gyroscope")
+line_Angle_Z, = ax3.plot([], [], label="Yaw angle with complementary filter", linestyle="--", linewidth=2.5, color="red")
 
 ax1.legend(loc="upper right")
 ax1.set_ylabel("Angle X (°)")
